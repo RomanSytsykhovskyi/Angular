@@ -1,0 +1,39 @@
+nav {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  background: #252b42;
+  .wrapper {
+    ul {
+      display: flex;
+      h1 {
+        img {
+          width: 13px;
+        }
+      }
+      li {
+        color: #fafafa;
+        font-weight: 100;
+      }
+      .commonPseudoClass::before {
+        margin-right: 5px;
+        display: inline-block;
+      }
+      .dollar::before {
+        content: "$";
+      }
+      .euro::before {
+        content: "€";
+      }
+    }
+    > ul {
+      justify-content: space-between;
+      align-items: center;
+    }
+    .slash {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+<div class="wrapper">
+  <h2 class="title">converter</h2>
+  <div class="converter">
+    <div class="currency leftCurrency">
+      <mat-form-field>
+        <mat-label>Currency</mat-label>
+        <mat-select (selectionChange)="leftSelectHandler($event)">
+          <mat-option>None</mat-option>
+          <mat-option
+            *ngFor="let current of _listCurrencyName"
+            [value]="current"
+          >
+            {{ current }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br />
+      <input
+        class="commonInputStyle leftCurrencyAmount"
+        name="left"
+        type="number"
+        placeholder="write amount"
+        (input)="leftInputHandler($event)"
+        [value]="leftCurrency"
+        [disabled]="!leftSelectedValue || !rightSelectedValue"
+      />
+    </div>
+    <div class="currency rightCurrency">
+      <mat-form-field>
+        <mat-label>Currency</mat-label>
+        <mat-select (selectionChange)="rightSelectHandler($event)">
+          <mat-option>None</mat-option>
+          <mat-option
+            *ngFor="let current of _listCurrencyName"
+            [value]="current"
+          >
+            {{ current }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br />
+      <input
+        class="commonInputStyle rightCurrencyAmount"
+        name="left"
+        type="number"
+        placeholder="write amount"
+        (input)="rightInputHandler($event)"
+        [value]="rightCurrency"
+        [disabled]="!leftSelectedValue || !rightSelectedValue"
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<nav>
+  <div class="wrapper">
+    <ul>
+      <li>
+        <h1>
+          <a href="/"><img src="../../assets/imgs/Dollar.png" alt="logo" /></a>
+        </h1>
+      </li>
+      <li>
+        <ul>
+          <li class="commonPseudoClass dollar">
+            {{ dollar === 0 ? "Loading..." : dollar }}
+          </li>
+          <li class="slash">/</li>
+          <li class="commonPseudoClass euro">
+            {{ euro === 0 ? "Loading..." : dollar }}
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+//@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+body,
+h1,
+ul {
+  margin: 0 !important;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
